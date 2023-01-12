@@ -25,6 +25,6 @@ node {
      }
      stage("Deploy"){
      sh 'docker rm -f customer||true'
-     sh 'docker run -p 9001:9001 -d --name customer customer:latest'
+     sh 'docker run -p 9002:9002 -d --name customer customer:latest'
      }
     }
